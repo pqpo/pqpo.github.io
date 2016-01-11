@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>能力值控制实现文档 | Qlm&#39;s Blog</title>
+  <meta name="description" content="Java Programer" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Qlm's Blog">
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/01/11/常用正则表达式/">常用正则表达式</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/01/11/Markdown语法说明/">Markdown语法说明</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/01/09/数字签名/">数字签名</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/01/09/关于ThreadLocal对象/">关于ThreadLocal对象</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/01/09/Java-volatile-关键字/">Java volatile 关键字</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/01/08/基于NIO的Socket/">基于NIO的Socket</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/01/06/Nginx部署SSL证书/">Nginx部署SSL证书</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/01/05/关键业务系统的JVM启动参数推荐/">关键业务系统的JVM启动参数推荐</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/01/05/vim程序编辑器/">vim程序编辑器</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/28/使用NIO提升性能/">使用NIO提升性能</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/25/Java异常/">Java异常</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/24/JVM性能调优监控工具jps、jstack、jmap、jhat、jstat、hprof使用详解/">JVM性能调优监控工具jps、jstack、jmap、jhat、jstat、hprof使用详解</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/24/JVM飙高排查脚本-结构分析/">JVM飙高排查脚本-结构分析</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/23/《Java并发编程实战》笔记/">《Java并发编程实战》笔记</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/22/JVM设置/">JVM设置</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/21/线程池ThreadPoolExecutor/">线程池ThreadPoolExecutor</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/21/Java并发包/">java并发包</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/21/Timer的缺陷/">Timer的缺陷</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/17/Spring-技术内幕-IoC容器的实现/">Spring 技术内幕-IoC容器的实现</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/17/Java-加密与解密的艺术/">Java 加密与解密的艺术</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/17/Spring-in-action/">Spring in action</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/17/Spring-配置头文件/">Spring 配置头文件</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/17/前端乱码/">前端乱码</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/17/能力值控制实现文档/">能力值控制实现文档</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/17/Linux常用命令/">Linux常用命令</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2015/12/17/Java开发常用Linux命令/">Java开发常用Linux命令</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/其他/">&nbsp;&nbsp;&nbsp;其他</a>
+                                    <small>3</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/工作/">&nbsp;&nbsp;&nbsp;工作</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/开发/">&nbsp;&nbsp;&nbsp;开发</a>
+                                    <small>15</small>
+                                </li>
+                                
+                                <li class="search-category-li mp-pjax">
+                                    <a href="/categories/读书/">&nbsp;&nbsp;&nbsp;读书</a>
+                                    <small>6</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
+                                    <small>18</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Linux/">&nbsp;&nbsp;&nbsp;Linux</a>
+                                    <small>3</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Markdown/">&nbsp;&nbsp;&nbsp;Markdown</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Nginx/">&nbsp;&nbsp;&nbsp;Nginx</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/SSL/">&nbsp;&nbsp;&nbsp;SSL</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Spring/">&nbsp;&nbsp;&nbsp;Spring</a>
+                                    <small>3</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/工作/">&nbsp;&nbsp;&nbsp;工作</a>
+                                    <small>2</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/正则/">&nbsp;&nbsp;&nbsp;正则</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <!--<li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>-->
+                    <li><a class="fa fa-github" href="https://github.com/pqpo" target="_blank">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2016/01/11/常用正则表达式/">常用正则表达式</a>
+                
+                    <a  data-pjax href="/2016/01/11/Markdown语法说明/">Markdown语法说明</a>
+                
+                    <a  data-pjax href="/2016/01/09/数字签名/">数字签名</a>
+                
+                    <a  data-pjax href="/2016/01/09/关于ThreadLocal对象/">关于ThreadLocal对象</a>
+                
+                    <a  data-pjax href="/2016/01/09/Java-volatile-关键字/">Java volatile 关键字</a>
+                
+                    <a  data-pjax href="/2016/01/08/基于NIO的Socket/">基于NIO的Socket</a>
+                
+                    <a  data-pjax href="/2016/01/06/Nginx部署SSL证书/">Nginx部署SSL证书</a>
+                
+                    <a  data-pjax href="/2016/01/05/关键业务系统的JVM启动参数推荐/">关键业务系统的JVM启动参数推荐</a>
+                
+                    <a  data-pjax href="/2016/01/05/vim程序编辑器/">vim程序编辑器</a>
+                
+                    <a  data-pjax href="/2015/12/28/使用NIO提升性能/">使用NIO提升性能</a>
+                
+                    <a  data-pjax href="/2015/12/25/Java异常/">Java异常</a>
+                
+                    <a  data-pjax href="/2015/12/24/JVM性能调优监控工具jps、jstack、jmap、jhat、jstat、hprof使用详解/">JVM性能调优监控工具jps、jstack、jmap、jhat、jstat、hprof使用详解</a>
+                
+                    <a  data-pjax href="/2015/12/24/JVM飙高排查脚本-结构分析/">JVM飙高排查脚本-结构分析</a>
+                
+                    <a  data-pjax href="/2015/12/23/《Java并发编程实战》笔记/">《Java并发编程实战》笔记</a>
+                
+                    <a  data-pjax href="/2015/12/22/JVM设置/">JVM设置</a>
+                
+                    <a  data-pjax href="/2015/12/21/线程池ThreadPoolExecutor/">线程池ThreadPoolExecutor</a>
+                
+                    <a  data-pjax href="/2015/12/21/Java并发包/">java并发包</a>
+                
+                    <a  data-pjax href="/2015/12/21/Timer的缺陷/">Timer的缺陷</a>
+                
+                    <a  data-pjax href="/2015/12/17/Spring-技术内幕-IoC容器的实现/">Spring 技术内幕-IoC容器的实现</a>
+                
+                    <a  data-pjax href="/2015/12/17/Java-加密与解密的艺术/">Java 加密与解密的艺术</a>
+                
+                    <a  data-pjax href="/2015/12/17/Spring-in-action/">Spring in action</a>
+                
+                    <a  data-pjax href="/2015/12/17/Spring-配置头文件/">Spring 配置头文件</a>
+                
+                    <a  data-pjax href="/2015/12/17/前端乱码/">前端乱码</a>
+                
+                    <a  data-pjax href="/2015/12/17/能力值控制实现文档/">能力值控制实现文档</a>
+                
+                    <a  data-pjax href="/2015/12/17/Linux常用命令/">Linux常用命令</a>
+                
+                    <a  data-pjax href="/2015/12/17/Java开发常用Linux命令/">Java开发常用Linux命令</a>
+                
+                
+                    <a data-pjax href="/categories/其他/">&nbsp;&nbsp;其他</a>
+                
+                    <a data-pjax href="/categories/工作/">&nbsp;&nbsp;工作</a>
+                
+                    <a data-pjax href="/categories/开发/">&nbsp;&nbsp;开发</a>
+                
+                    <a data-pjax href="/categories/读书/">&nbsp;&nbsp;读书</a>
+                
+                
+                    <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
+                
+                    <a data-pjax href="/tags/Linux/">&nbsp;&nbsp;Linux</a>
+                
+                    <a data-pjax href="/tags/Markdown/">&nbsp;&nbsp;Markdown</a>
+                
+                    <a data-pjax href="/tags/Nginx/">&nbsp;&nbsp;Nginx</a>
+                
+                    <a data-pjax href="/tags/SSL/">&nbsp;&nbsp;SSL</a>
+                
+                    <a data-pjax href="/tags/Spring/">&nbsp;&nbsp;Spring</a>
+                
+                    <a data-pjax href="/tags/工作/">&nbsp;&nbsp;工作</a>
+                
+                    <a data-pjax href="/tags/正则/">&nbsp;&nbsp;正则</a>
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Qlm&#39;s Blog</a></li>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="post-template">-->
+<!---->
+  
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/工作/' style='color:#D5D5D5'>工作</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">能力值控制实现文档</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2015-12-17T07:51:06.000Z"
+                              itemprop="datePublished">2015-12-17</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h2 id="SMB_u80FD_u529B_u503C_u63A7_u5236_u5B9E_u73B0_u6587_u6863"><a href="#SMB_u80FD_u529B_u503C_u63A7_u5236_u5B9E_u73B0_u6587_u6863" class="headerlink" title="SMB能力值控制实现文档"></a>SMB能力值控制实现文档</h2><h3 id="u529F_u80FD_u9700_u6C42"><a href="#u529F_u80FD_u9700_u6C42" class="headerlink" title="功能需求"></a>功能需求</h3><hr>
+<p>服务消息总线接口管理添加能力值字段，能力控制体现为：<strong>调用次数上限/秒</strong>。<br>第三方应用调用消息服务总线提供的服务接口时，需要实现服务能力权限控制功能。 </p>
+<h3 id="u4E3B_u8981_u64CD_u4F5C_u7C7B"><a href="#u4E3B_u8981_u64CD_u4F5C_u7C7B" class="headerlink" title="主要操作类"></a>主要操作类</h3><hr>
+<pre><code>net.rubyeye.xmemcached.MemcachedClient 
+获取方法：
+MemcachedBaseService.getMemcachedService().getCache();
+</code></pre><h3 id="u65B9_u6CD5_u6458_u8981"><a href="#u65B9_u6CD5_u6458_u8981" class="headerlink" title="方法摘要"></a>方法摘要</h3><hr>
+<ul>
+<li>GetsResponse gets(String key)  通过key查找一个GetsResponse对象，若key不存在册返回null。通过GetsResponse对象可以获取value和cas版本号。</li>
+<li>boolean add(String key,int exp,Object value) 将key:value保存到Memcached中，并设置过期时间（单位：秒）。若key<strong>不存在</strong>添加成功，否则失败。</li>
+<li>boolean cas(String key,int exp,Object value,long cas) 通过cas（check and set）保存键值对,若版本号（cas）<strong>不一致则保存失败</strong>。</li>
+</ul>
+<h3 id="u5B9E_u73B0_u6D41_u7A0B"><a href="#u5B9E_u73B0_u6D41_u7A0B" class="headerlink" title="实现流程"></a>实现流程</h3><hr>
+<ol>
+<li>通过gets操作获取一个GetsResponse对象。</li>
+<li>若GetsResponse不存在，则通过add方法添加（<strong>过期时间1秒</strong>），若添加成功返回true。</li>
+<li>重复第一步。</li>
+<li>判断能力值是否可用（自减后大于0），若可用进行下一步，否则返回false。</li>
+<li>通过cas添加，若添加成功返回true，否则返回第3步。</li>
+<li>重试多次后一直没有添加成功则返回false。</li>
+</ol>
+<h3 id="u4F2A_u4EE3_u7801"><a href="#u4F2A_u4EE3_u7801" class="headerlink" title="伪代码"></a>伪代码</h3><hr>
+<pre><code>1.  response = memcachedClient.gets(key)
+2.  if(response==null):
+3.    ability = getAbility()
+4.    ability--
+5.    //exp为过期时间1秒
+6.    if(memcachedClient.add(key,exp,ability)):
+7.      //如果add成功则说明第一次增加，在能力范围之内返回true
+8.      return true；
+9.  //重试maxTry次
+10. for x in (0,maxTry):
+11.   response = memcachedClient.gets(key)
+12.   cas = response.getCas()
+13.   ability = response.getValue()
+14.   if(ability&lt;=0):
+15.     return false;
+16.   ability--
+17.   //只有当版本号一致才能操作成功
+18.   if(memcachedClient.cas(key, exp, ability, cas)):
+19.     //若cas成功则返回true
+20.     return true
+21. return false;
+</code></pre>
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a data-pjax class="newer-posts" href="/2015/12/17/前端乱码/">← Prev Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2015/12/17/Linux常用命令/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+  
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"> &copy; <a href="/"> Qlm's Blog </a> 2015 
+		<br><a href="http://www.miitbeian.gov.cn/" target=_blank >浙ICP备14026718号</a>
+		</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> , Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a> and Run on <a target="_blank" href="http://www.aliyun.com/">Aliyun</a></section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+  
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+
+
+</body>
+</html>
