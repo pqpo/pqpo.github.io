@@ -42,6 +42,10 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/05/19/沉浸式状态栏解决方案/">沉浸式状态栏解决方案</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
                                     <a href="/2016/01/11/常用正则表达式/">常用正则表达式</a>
                                 </li>
                                 
@@ -180,7 +184,7 @@
                                 
                                 <li class="search-category-li mp-pjax">
                                     <a href="/categories/读书/">&nbsp;&nbsp;&nbsp;读书</a>
-                                    <small>6</small>
+                                    <small>7</small>
                                 </li>
                                 
                                 </div>
@@ -199,6 +203,11 @@
                             </form>
                             <ul>
                                 <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Android/">&nbsp;&nbsp;&nbsp;Android</a>
+                                    <small>1</small>
+                                </li>
                                 
                                 <li class="search-tag-li mp-pjax">
                                     <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
@@ -254,6 +263,8 @@
         </nav>
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2016/05/19/沉浸式状态栏解决方案/">沉浸式状态栏解决方案</a>
                 
                     <a  data-pjax href="/2016/01/11/常用正则表达式/">常用正则表达式</a>
                 
@@ -317,6 +328,8 @@
                     <a data-pjax href="/categories/读书/">&nbsp;&nbsp;读书</a>
                 
                 
+                    <a data-pjax href="/tags/Android/">&nbsp;&nbsp;Android</a>
+                
                     <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
                 
                     <a data-pjax href="/tags/Linux/">&nbsp;&nbsp;Linux</a>
@@ -353,6 +366,39 @@
   
 <main class="content" role="main">
 
+    
+    <article class="post">
+
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                
+                <a data-pjax href='/tags/Java/'>Java</a>
+                
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2015/12/28/使用NIO提升性能/">使用NIO提升性能</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2015-12-28T03:26:58.000Z"
+                      itemprop="datePublished">2015-12-28</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                在nio中和Buffer配合使用的还有Channel。Channel是一个双向通道，既可读，也可写。
+Buffer的基本原理位置（position）、容量（capactiy）、上限（limit）
+Buffer的相关操作1.Buffer的创建
+1234567//从堆中分配  ByteBuffer buffer = ByteBuffer.allocate(1024);  //直接内存访问  ByteBuffer buffer = ByteB
+                
+            </p>
+            
+        </section>
+    </article>
     
     <article class="post">
 
@@ -486,46 +532,6 @@ jps [op
 2. 活跃性问题（某个正确的事情最终会发生，死锁，饥饿，死锁）  
 3. 性能问题  
 线程安全性：当多个线程访问某个类时，这个类始终能表现出正确的行为，那么就称这个类时线程安全的。竞态条件：在并发编程中，由于不恰当的执行时序而出现不正确的结果。锁可重入意味着获取锁的操作的粒度是线程而不是调用。在没有同步的情况下，编译器，处理器，运行时等都可能对操作的执行顺
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/Java/'>Java</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2015/12/22/JVM设置/">JVM设置</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2015-12-22T06:04:41.000Z"
-                      itemprop="datePublished">2015-12-22</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                堆栈空间设置
--XX:+PrintGCDetails 
--Xms: 初始堆大小
--Xmx: 最大堆大小
--Xmn: 新生代大小 NewSize=MaxNewSize
--XX:NewSize: 新生代初始堆大小
--XX:MaxNewSize: 新生代最大堆大小
--Xss: 线程栈大小
--XX:PermSize: 永久代（方法区）初始值
--XX:MaxPermSize: 永久代最大值
--XX:NewRatio: 老年代，新生代比例 old 
                 
             </p>
             

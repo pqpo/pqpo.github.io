@@ -42,6 +42,10 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/05/19/沉浸式状态栏解决方案/">沉浸式状态栏解决方案</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
                                     <a href="/2016/01/11/常用正则表达式/">常用正则表达式</a>
                                 </li>
                                 
@@ -180,7 +184,7 @@
                                 
                                 <li class="search-category-li mp-pjax">
                                     <a href="/categories/读书/">&nbsp;&nbsp;&nbsp;读书</a>
-                                    <small>6</small>
+                                    <small>7</small>
                                 </li>
                                 
                                 </div>
@@ -199,6 +203,11 @@
                             </form>
                             <ul>
                                 <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Android/">&nbsp;&nbsp;&nbsp;Android</a>
+                                    <small>1</small>
+                                </li>
                                 
                                 <li class="search-tag-li mp-pjax">
                                     <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
@@ -254,6 +263,8 @@
         </nav>
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2016/05/19/沉浸式状态栏解决方案/">沉浸式状态栏解决方案</a>
                 
                     <a  data-pjax href="/2016/01/11/常用正则表达式/">常用正则表达式</a>
                 
@@ -317,6 +328,8 @@
                     <a data-pjax href="/categories/读书/">&nbsp;&nbsp;读书</a>
                 
                 
+                    <a data-pjax href="/tags/Android/">&nbsp;&nbsp;Android</a>
+                
                     <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
                 
                     <a data-pjax href="/tags/Linux/">&nbsp;&nbsp;Linux</a>
@@ -353,6 +366,46 @@
   
 <main class="content" role="main">
 
+    
+    <article class="post">
+
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                
+                <a data-pjax href='/tags/Java/'>Java</a>
+                
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2015/12/22/JVM设置/">JVM设置</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2015-12-22T06:04:41.000Z"
+                      itemprop="datePublished">2015-12-22</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                堆栈空间设置
+-XX:+PrintGCDetails 
+-Xms: 初始堆大小
+-Xmx: 最大堆大小
+-Xmn: 新生代大小 NewSize=MaxNewSize
+-XX:NewSize: 新生代初始堆大小
+-XX:MaxNewSize: 新生代最大堆大小
+-Xss: 线程栈大小
+-XX:PermSize: 永久代（方法区）初始值
+-XX:MaxPermSize: 永久代最大值
+-XX:NewRatio: 老年代，新生代比例 old 
+                
+            </p>
+            
+        </section>
+    </article>
     
     <article class="post">
 
@@ -486,38 +539,6 @@ Timer执行周期任务时依赖系统时间Timer执行周期任务时依赖系�
                 控制反转(Inversion of Control)  
 简单容器：BeanFactory容器的高级形态：ApplicationContextBean定义：BeanDefinition  
 定位（Resource） -&gt;  载入、解析（BeanDefinitionReader、BeanDefinitionDocumentReader，创建BeanFactory） -&gt; 注册（通过BeanDefinitionRegistry接
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/Java/'>Java</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2015/12/17/Java-加密与解密的艺术/">Java 加密与解密的艺术</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2015-12-17T08:07:46.000Z"
-                      itemprop="datePublished">2015-12-17</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                单向加密算法：MD5,SHA。用于数据完整性验证。对称加密算法：DES。数据储存加密的常用算法。非对称加密算法：RSA。数据传输加密的常用算法。  
-柯克霍夫原则：密码系统应该就算被所有人知道系统的运作步骤，仍然是安全的。  
-Java API支持：MessageDigest类构建MD5,SHA两种加密算法；Mac类可以构建HMAC加密算法；Cipher类可以构建多种加密算法，如DES、AES、Blowfish 以及 RSA、DSA、D
                 
             </p>
             

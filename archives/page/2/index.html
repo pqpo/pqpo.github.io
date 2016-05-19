@@ -42,6 +42,10 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/05/19/沉浸式状态栏解决方案/">沉浸式状态栏解决方案</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
                                     <a href="/2016/01/11/常用正则表达式/">常用正则表达式</a>
                                 </li>
                                 
@@ -180,7 +184,7 @@
                                 
                                 <li class="search-category-li mp-pjax">
                                     <a href="/categories/读书/">&nbsp;&nbsp;&nbsp;读书</a>
-                                    <small>6</small>
+                                    <small>7</small>
                                 </li>
                                 
                                 </div>
@@ -199,6 +203,11 @@
                             </form>
                             <ul>
                                 <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Android/">&nbsp;&nbsp;&nbsp;Android</a>
+                                    <small>1</small>
+                                </li>
                                 
                                 <li class="search-tag-li mp-pjax">
                                     <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
@@ -254,6 +263,8 @@
         </nav>
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2016/05/19/沉浸式状态栏解决方案/">沉浸式状态栏解决方案</a>
                 
                     <a  data-pjax href="/2016/01/11/常用正则表达式/">常用正则表达式</a>
                 
@@ -317,6 +328,8 @@
                     <a data-pjax href="/categories/读书/">&nbsp;&nbsp;读书</a>
                 
                 
+                    <a data-pjax href="/tags/Android/">&nbsp;&nbsp;Android</a>
+                
                     <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
                 
                     <a data-pjax href="/tags/Linux/">&nbsp;&nbsp;Linux</a>
@@ -353,6 +366,38 @@
   
 <main class="content" role="main">
 
+    
+    <article class="post">
+
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                
+                <a data-pjax href='/tags/Java/'>Java</a>
+                
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2016/01/09/Java-volatile-关键字/">Java volatile 关键字</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2016-01-09T08:01:02.000Z"
+                      itemprop="datePublished">2016-01-09</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                Java 内存模型：
+线程安全：
+原子性：由Java内存模型直接保证的原子性变量操作包括read,load,user,assign,stroe,write,大致可认为Java基础数据类型的读写是具备原子性的。Java内存模型还提供了lock和unlock，由高层字节码指令monitorenter和monitorexit隐匿地使用，反应到Java代码就是synchronized关键字。因此synchronized块直接的操作也是原子性的。
+                
+            </p>
+            
+        </section>
+    </article>
     
     <article class="post">
 
@@ -476,39 +521,6 @@ JVM调优的”标准参数”的各种陷阱 R大的文章，在JDK6时写的�
                 
                 一般模式下常用按键说明移动光标的方法0 移动到这一行最前面字符处$     移动到这一行最后面字符处H 光标移到到这个屏幕最上方第一个字符M 光标移动到这个屏幕中间位置第一个字符L 光标移动到这个屏幕最下方第一个字符G 移动到这个文件最后一行nG 移动到第n行（:set nu）gg 移动到文件第一行（1G）n[Enter] 光标向下移动n行
 查找与替换/word 向下查找?word 向上查找n,N 下一个，上一个:n1,n2s/word
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/Java/'>Java</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2015/12/28/使用NIO提升性能/">使用NIO提升性能</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2015-12-28T03:26:58.000Z"
-                      itemprop="datePublished">2015-12-28</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                在nio中和Buffer配合使用的还有Channel。Channel是一个双向通道，既可读，也可写。
-Buffer的基本原理位置（position）、容量（capactiy）、上限（limit）
-Buffer的相关操作1.Buffer的创建
-1234567//从堆中分配  ByteBuffer buffer = ByteBuffer.allocate(1024);  //直接内存访问  ByteBuffer buffer = ByteB
                 
             </p>
             

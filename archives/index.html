@@ -42,6 +42,10 @@
                                 <div class="mp-scroll">
                                 
                                 <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/05/19/沉浸式状态栏解决方案/">沉浸式状态栏解决方案</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
                                     <a href="/2016/01/11/常用正则表达式/">常用正则表达式</a>
                                 </li>
                                 
@@ -180,7 +184,7 @@
                                 
                                 <li class="search-category-li mp-pjax">
                                     <a href="/categories/读书/">&nbsp;&nbsp;&nbsp;读书</a>
-                                    <small>6</small>
+                                    <small>7</small>
                                 </li>
                                 
                                 </div>
@@ -199,6 +203,11 @@
                             </form>
                             <ul>
                                 <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/Android/">&nbsp;&nbsp;&nbsp;Android</a>
+                                    <small>1</small>
+                                </li>
                                 
                                 <li class="search-tag-li mp-pjax">
                                     <a href="/tags/Java/">&nbsp;&nbsp;&nbsp;Java</a>
@@ -254,6 +263,8 @@
         </nav>
         <div id="pjax">
             <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2016/05/19/沉浸式状态栏解决方案/">沉浸式状态栏解决方案</a>
                 
                     <a  data-pjax href="/2016/01/11/常用正则表达式/">常用正则表达式</a>
                 
@@ -317,6 +328,8 @@
                     <a data-pjax href="/categories/读书/">&nbsp;&nbsp;读书</a>
                 
                 
+                    <a data-pjax href="/tags/Android/">&nbsp;&nbsp;Android</a>
+                
                     <a data-pjax href="/tags/Java/">&nbsp;&nbsp;Java</a>
                 
                     <a data-pjax href="/tags/Linux/">&nbsp;&nbsp;Linux</a>
@@ -353,6 +366,37 @@
   
 <main class="content" role="main">
 
+    
+    <article class="post">
+
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                
+                <a data-pjax href='/tags/Android/'>Android</a>
+                
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2016/05/19/沉浸式状态栏解决方案/">沉浸式状态栏解决方案</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2016-05-19T13:28:13.000Z"
+                      itemprop="datePublished">2016-05-19</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                伴随着 Android 5.0 发布的 Material Design，让 Android 应用告别了以前的工程师审美，迎来了全新的界面，灵动的交互，也让越来越多的 App 开始遵从 material design 设计原则，不再是以前拿着iOS设计稿，做着Android开发。本文就其中的沉浸式状态栏这一特性，描述其兼容到4.4的实现，以及一些使用中的小细节。
+前言在4.4之前状态栏一直是黑色的，在4.4中带来了 windowTrans
+                
+            </p>
+            
+        </section>
+    </article>
     
     <article class="post">
 
@@ -484,38 +528,6 @@
                 
                 ThreadLocal，线程本地变量，由于是线程内变量不存在并发问题，所以线程内可以安全的使用。  
 使用场景：用来解决 数据库连接、Session管理等。由于每次都是在方法内部创建的连接，那么线程之间自然不存在线程安全问题。但是这样会有一个致命的影响：导致服务器压力非常大，并且严重影响程序执行性能。由于在方法中需要频繁地开启和关闭数据库连接，这样不尽严重影响程序执行效率，还可能导致服务器压力巨大。那么这种情况下使用ThreadLoca
-                
-            </p>
-            
-        </section>
-    </article>
-    
-    <article class="post">
-
-        <header class="post-header">
-            <div class="tag-tile">
-                
-                
-                <a data-pjax href='/tags/Java/'>Java</a>
-                
-                
-                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
-            </div>
-            <h1 class="post-title"><a data-pjax href="/2016/01/09/Java-volatile-关键字/">Java volatile 关键字</a>
-            </h1>
-
-            <div class="post-meta">
-                Post on<span class="fa fa-clock-o"></span>
-                <time datetime="2016-01-09T08:01:02.000Z"
-                      itemprop="datePublished">2016-01-09</time>
-            </div>
-        </header>
-        <section class="post-excerpt">
-            <p>
-                
-                Java 内存模型：
-线程安全：
-原子性：由Java内存模型直接保证的原子性变量操作包括read,load,user,assign,stroe,write,大致可认为Java基础数据类型的读写是具备原子性的。Java内存模型还提供了lock和unlock，由高层字节码指令monitorenter和monitorexit隐匿地使用，反应到Java代码就是synchronized关键字。因此synchronized块直接的操作也是原子性的。
                 
             </p>
             
